@@ -38,7 +38,7 @@ libtoolize --copy --force
 aclocal -I %{_aclocaldir}/gnome
 autoconf
 rm -f missing
-automake -a -c
+automake -a -c -f
 %configure
 %{__make}
 
