@@ -20,7 +20,6 @@ gno3dtet is a 3D Tetris-like game for GNOME.
 %setup -q
 
 %build
-LDFLAGS="-s"; export LDFLAGS
 %configure
 
 %{__make} 
