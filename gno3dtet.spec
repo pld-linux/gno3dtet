@@ -1,7 +1,7 @@
 Summary:	GNOME 3D Tetris game
 Name:		gno3dtet
 Version:	1.6.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Aplikacje/Spiele
@@ -14,7 +14,6 @@ BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
 BuildRequires:	libstdc++-devel
 Prereq:		fileutils
-Prereq:		touch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
