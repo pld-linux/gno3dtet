@@ -1,6 +1,6 @@
 Summary:	GNOME 3D Tetris game
 Name:		gno3dtet
-Version:	1.6.3
+Version:	1.6.4
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
@@ -14,6 +14,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	libtool
 Prereq:		fileutils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,8 +30,10 @@ gno3dtet is a 3D Tetris-like game for GNOME.
 %patch -p1
 
 %build
+libtoolize --copy --force
 aclocal -I %{_aclocaldir}/gnome
 autoconf
+rm -f missing
 automake -a -c
 %configure
 %{__make} 
