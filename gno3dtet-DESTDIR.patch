@@ -1,0 +1,15 @@
+diff -Nru gno3dtet-1.6.1/gno3dtet/Makefile.am gno3dtet-1.6.1.new/gno3dtet/Makefile.am
+--- gno3dtet-1.6.1/gno3dtet/Makefile.am	Sat Dec 23 23:51:03 2000
++++ gno3dtet-1.6.1.new/gno3dtet/Makefile.am	Tue Jan  2 18:32:55 2001
+@@ -48,7 +48,7 @@
+ 	$(sound_DATA)
+ 
+ install-data-local:
+-	-$(mkinstalldirs) $(scoredir)
+-	-touch $(scoredir)/$(hoffile)
+-	-chmod ugo+w $(scoredir)/$(hoffile)
+-	-chown games.games $(scoredir)/$(hoffile)
++	-$(mkinstalldirs) $(DESTDIR)$(scoredir)
++	-touch $(DESTDIR)$(scoredir)/$(hoffile)
++	-chmod ugo+w $(DESTDIR)$(scoredir)/$(hoffile)
++	-chgroup games $(DESTDIR)$(scoredir)/$(hoffile)
