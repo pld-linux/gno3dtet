@@ -1,14 +1,15 @@
 Summary:	GNOME 3D Tetris game
 Name:		gno3dtet
 Version:	1.6.4
-Release:	1
+Release:	2
 License:	GPL
+Vendor:		Sebastien Nicoud <snicoud@home.com>
 Group:		X11/Applications/Games
 Group(de):	X11/Aplikacje/Spiele
 Group(pl):	X11/Aplikacje/Gry
-Vendor:		Sebastien Nicoud <snicoud@home.com>
 Source0:	ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
 Patch0:		%{name}-DESTDIR.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://webdat.com/seb/3dtetris.html
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -27,7 +28,8 @@ gno3dtet is a 3D Tetris-like game for GNOME.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
+%patch1 -p1
 
 %build
 libtoolize --copy --force
