@@ -1,6 +1,6 @@
 Summary:	GNOME 3D Tetris game
 Name:		gno3dtet
-Version:	1.2.0
+Version:	1.6.0
 Release:	1
 License:	GPL
 Group:		X11/Games
@@ -29,7 +29,8 @@ make
 rm -rf $RPM_BUILD_ROOT
 
 make install \
-	DESTDOR=$RPM_BUILD_ROOT
+	DESTDOR=$RPM_BUILD_ROOT \
+	Gamesdir=%{_applnkdir}/Games
 
 %find_lang %{name} --with-gnome
 
