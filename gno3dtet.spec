@@ -34,7 +34,7 @@ gno3dtet to trójwymiarowa gra podobna do Tetrisa dla GNOME.
 %patch1 -p1
 
 %build
-libtoolize --copy --force
+%{__libtoolize}
 aclocal -I %{_aclocaldir}/gnome
 %{__autoconf}
 rm -f missing
