@@ -23,12 +23,12 @@ gno3dtet is a 3D Tetris-like game for GNOME.
 LDFLAGS="-s"; export LDFLAGS
 %configure
 
-make 
+%{__make} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install \
+%{__make} install \
 	DESTDOR=$RPM_BUILD_ROOT \
 	Gamesdir=%{_applnkdir}/Games
 
