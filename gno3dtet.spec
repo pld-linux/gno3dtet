@@ -56,7 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %post
 touch %{_localstatedir}/games/gno3dtet.hof
 chmod 664 %{_localstatedir}/games/gno3dtet.hof
-chown root.games %{_localstatedir}/games/gno3dtet.hof
+chown root:games %{_localstatedir}/games/gno3dtet.hof
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
