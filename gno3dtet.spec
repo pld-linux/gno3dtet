@@ -6,8 +6,6 @@ Release:	3
 License:	GPL
 Vendor:		Sebastien Nicoud <snicoud@home.com>
 Group:		X11/Applications/Games
-Group(de):	X11/Aplikacje/Spiele
-Group(pl):	X11/Aplikacje/Gry
 Source0:	ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-desktop.patch
