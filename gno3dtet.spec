@@ -26,7 +26,7 @@ LDFLAGS="-s"; export LDFLAGS
 make 
 
 %install
-rm -f $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 make install \
 	DESTDOR=$RPM_BUILD_ROOT
