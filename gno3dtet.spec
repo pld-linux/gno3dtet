@@ -8,7 +8,7 @@ Group(de):	X11/Aplikacje/Spiele
 Group(pl):	X11/Aplikacje/Gry
 Vendor:		Sebastien Nicoud <snicoud@home.com>
 Source0:	ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
-Patch0:		gno3dtet-DESTDIR.patch
+Patch0:		%{name}-DESTDIR.patch
 URL:		http://webdat.com/seb/3dtetris.html
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %find_lang %{name} --with-gnome
 
 %clean
-rm -f $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %post
 touch %{_localstatedir}/games/gno3dtet.hof
