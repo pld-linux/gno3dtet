@@ -1,7 +1,8 @@
 Summary:	GNOME 3D Tetris game
+Summary(pl):	Tetris 3D dla GNOME
 Name:		gno3dtet
 Version:	1.6.4
-Release:	2
+Release:	3
 License:	GPL
 Vendor:		Sebastien Nicoud <snicoud@home.com>
 Group:		X11/Applications/Games
@@ -25,6 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 gno3dtet is a 3D Tetris-like game for GNOME.
+
+%description -l pl
+gno3dtet to trójwymiarowa gra podobna do Tetrisa dla GNOME.
 
 %prep
 %setup -q
@@ -55,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %post
 touch %{_localstatedir}/games/gno3dtet.hof
 chmod 664 %{_localstatedir}/games/gno3dtet.hof
-chown games.root %{_localstatedir}/games/gno3dtet.hof
+chown root.games %{_localstatedir}/games/gno3dtet.hof
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
