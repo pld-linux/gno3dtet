@@ -7,6 +7,7 @@ License:	GPL
 Vendor:		Sebastien Nicoud <snicoud@home.com>
 Group:		X11/Applications/Games
 Source0:	ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
+# Source0-md5:	62c01388996b648c07fc2fe46fb6bca6
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-desktop.patch
 URL:		http://webdat.com/seb/3dtetris.html
