@@ -1,0 +1,13 @@
+--- gno3dtet-1.6.4/gno3dtet/gno3dtet.desktop~	Tue Mar 20 01:55:44 2001
++++ gno3dtet-1.6.4/gno3dtet/gno3dtet.desktop	Tue Sep  4 15:36:52 2001
+@@ -1,9 +1,8 @@
+-
+ [Desktop Entry]
+ Name=3D Tetris
+ Comment=Seb's 3D Tetris game for GNOME
+ Exec=gno3dtet 
+-Icon=/usr/share/pixmaps/gno3dtet.png
++Icon=gno3dtet.png
+ Terminal=false
+ MultipleArgs=false
+ Type=Application
