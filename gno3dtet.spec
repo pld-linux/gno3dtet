@@ -10,6 +10,7 @@ Vendor:		Sebastien Nicoud <snicoud@home.com>
 Source0:	ftp://webdat.com/pub/seb/gno3dtet/%{name}-%{version}.tgz
 Patch0:		%{name}-DESTDIR.patch
 URL:		http://webdat.com/seb/3dtetris.html
+BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-libs-devel
 BuildRequires:	libstdc++-devel
@@ -28,7 +29,9 @@ gno3dtet is a 3D Tetris-like game for GNOME.
 %patch -p1
 
 %build
-automake
+aclocal -I macros
+autoconf
+automake -a -c
 %configure
 %{__make} 
 
