@@ -1,5 +1,5 @@
 Summary:	GNOME 3D Tetris game
-Summary(pl.UTF-8):   Tetris 3D dla GNOME
+Summary(pl.UTF-8):	Tetris 3D dla GNOME
 Name:		gno3dtet
 Version:	1.6.4
 Release:	3
